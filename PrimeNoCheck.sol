@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-contract Day3 {
+contract PrimeNoCheck {
     function prime(uint n) public pure returns (string memory) {
         for (uint i = 2; i < n; i++) {
             if (n % i == 0) {
