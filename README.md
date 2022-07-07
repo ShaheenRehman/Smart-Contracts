@@ -1,2 +1,2 @@
 # Smart-Contracts
-Repo of all the Smart Contracts, I'm gonna make while learning Solidity IA.
+Repo of all the Smart Contracts, I write to polish my Solidity Skills :)
