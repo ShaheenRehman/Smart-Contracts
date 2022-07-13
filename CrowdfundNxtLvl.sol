@@ -25,9 +25,9 @@ library PriceConverter {
     }
 }
 
-error FundMe__NotOwner();
+error Crowdfund__NotOwner();
 
-contract FundMe {
+contract Crowdfund {
     using PriceConverter for uint;
 
     address[] public funders;
@@ -75,7 +75,7 @@ contract FundMe {
     modifier contractOwnerOnly() {
         // require(msg.sender == ContractOwner, "Chor! Chor! Chor!");
         if (msg.sender != ContractOwner) {
-            revert FundMe__NotOwner();
+            revert Crowdfund__NotOwner();
         }
         _;
     }
