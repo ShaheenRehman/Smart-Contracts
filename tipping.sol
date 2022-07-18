@@ -8,27 +8,27 @@ import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 // error tipping__deleteAdmin__OnlyContractOwnerCanDeleteAdmins();
 // error tipping__transferContractOwnership__OnlyContractOwnerCanChangeOwnership();
 
-// interface ERC20 {
-//     function balanceOf(address _tokenOwner)
-//         external
-//         view
-//         returns (uint balance);
+interface ERC20 {
+    function balanceOf(address _tokenOwner)
+        external
+        view
+        returns (uint balance);
 
-//     function transfer(address _to, uint _tokens)
-//         external
-//         returns (bool success);
+    function transfer(address _to, uint _tokens)
+        external
+        returns (bool success);
 
-//     function allowance(address _contract, address _spender)
-//         external
-//         view
-//         returns (uint256 remaining);
+    function allowance(address _contract, address _spender)
+        external
+        view
+        returns (uint256 remaining);
 
-//     function transferFrom(
-//         address _from,
-//         address _to,
-//         uint256 _value
-//     ) external returns (bool success);
-// }
+    function transferFrom(
+        address _from,
+        address _to,
+        uint256 _value
+    ) external returns (bool success);
+}
 
 // contract tipping {
 //     using SafeMath for uint256;
