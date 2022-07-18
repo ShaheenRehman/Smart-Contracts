@@ -154,10 +154,10 @@ contract tipping {
         _;
     }
 
-    //     // Helper function
-    //     function _transferOwnership(address newOwner) internal virtual {
-    //         address oldOwner = contractOwner;
-    //         contractOwner = newOwner;
-    //         emit OwnershipTransferred(oldOwner, newOwner);
-    //     }
+    // Helper function
+    function _transferOwnership(address newOwner) internal virtual {
+        address oldOwner = contractOwner;
+        contractOwner = newOwner;
+        emit OwnershipTransferred(oldOwner, newOwner);
+    }
 }
