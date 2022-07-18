@@ -2,11 +2,11 @@
 pragma solidity ^0.8.1;
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
 
-// error tipping__withdraw__OnlyAdminCanWithdraw();
-// error tipping__withdrawToken__OnlyAdminCanWithdrawToken();
-// error tipping__addAdmin__OnlyContractOwnerCanAddAdmins();
-// error tipping__deleteAdmin__OnlyContractOwnerCanDeleteAdmins();
-// error tipping__transferContractOwnership__OnlyContractOwnerCanChangeOwnership();
+error tipping__withdraw__OnlyAdminCanWithdraw();
+error tipping__withdrawToken__OnlyAdminCanWithdrawToken();
+error tipping__addAdmin__OnlyContractOwnerCanAddAdmins();
+error tipping__deleteAdmin__OnlyContractOwnerCanDeleteAdmins();
+error tipping__transferContractOwnership__OnlyContractOwnerCanChangeOwnership();
 
 interface ERC20 {
     function balanceOf(address _tokenOwner)
