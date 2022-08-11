@@ -5,7 +5,7 @@ contract Counter {
     int public counter;
 
     function countAdd() public returns (int) {
-        return counter++;
+        return ++counter;
     }
 
     function countSub() public returns (int) {
