@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity ^0.8.5;
+pragma solidity 0.8.5;
 
 contract SumArray {
     function sumarray(uint[] memory array) public pure returns (uint) {
